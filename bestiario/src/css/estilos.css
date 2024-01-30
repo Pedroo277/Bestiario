@@ -29,6 +29,10 @@ header .imagem-botao , header .imagem-botao-2{
     transition: 0.2s;
 }
 
+header a img.logo {
+    width: 55px
+}
+
 header #botao-alterar-tema{
     background: none;
     border:  none;
@@ -43,7 +47,7 @@ main{
     padding: 25px;
 }
 
-.listagem-pokemon{
+.bestiario{
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
@@ -63,7 +67,7 @@ main{
 }
 
 main .cartao-pokemon:hover{
-    background-color: #96d9d6;
+    background-color: #c5c5c5;
 }
 
 .modo-escuro .cartao-pokemon{
@@ -84,8 +88,8 @@ main .cartao-pokemon .informacoes span{
 }
 
 main .cartao-pokemon .gif{
-    width: 90px;
-    height: 90px;
+    width: 120px;
+    height: 120px;
 }
 
 main .cartao-pokemon .tipos{
