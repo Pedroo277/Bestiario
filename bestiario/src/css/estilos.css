@@ -122,6 +122,11 @@ main .cartao-pokemon .tipo{
     background-color: #a6b91a;
 }
 
+.sombras{
+    background-color: #3c2444;
+    color: white;
+}
+
 main .descricao{
     max-height: 80px;
     overflow-y: scroll;
