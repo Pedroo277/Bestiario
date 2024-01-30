@@ -138,7 +138,8 @@ main .cartao-pokemon .tipo{
 }
 
 .madeira{
-    background-color: rgb(148, 132, 123);
+    background-color: rgb(92, 81, 74);
+    color: white;
 }
 
 main .descricao{
