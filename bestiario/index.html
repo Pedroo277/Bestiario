@@ -1,237 +1,281 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Bestiário Arcano</title>
 
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;800&display=swap" rel="stylesheet" />
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Bestiário Arcano</title>
 
-		<link rel="stylesheet" href="./src/css/reset.css">
-		<link rel="stylesheet" href="./src/css/estilos.css">
-		<link rel="stylesheet" href="./src/css/scrollbar.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;800&display=swap" rel="stylesheet" />
 
-		<link rel="shortcut icon" href="src/imagens/11zon_cropped (9).png" type="image/x-icon">
-		
-	</head>
-	<body>
-		<header>
-			<a href="https://discord.gg/bGEFGUdcuE" target="_blank">
-				<img src="./src/imagens/discord-logo-discord-icon-transparent-free-png.webp" alt="Arcana RPG" class="logo"/>
-			</a>
-			<button id="botao-alterar-tema">
-				<img src="./src/imagens/sun.png" alt="imagem do sol" class="imagem-botao" id="imagem-botao" />
-				<img src="./src/imagens/moon.png" alt="imagem da lua" class="imagem-botao-2" id="imagem-botao-2"/>
-			</button>
-		</header>
-		<main>
-			<ul class="bestiario">
-				<li class="cartao-pokemon">
-					<div class="informacoes">
-						<span>Explosuva</span>
-					</div>
+	<link rel="stylesheet" href="./src/css/reset.css">
+	<link rel="stylesheet" href="./src/css/estilos.css">
+	<link rel="stylesheet" href="./src/css/scrollbar.css">
 
-					<img src="./src/imagens/1-removebg-preview.png" alt="Explosuva" class="gif" onmouseover="play1()" />
-			
-					<ul class="tipos">
-						<li class="tipo carnal">Carnal</li>
-					</ul>
+	<link rel="shortcut icon" href="src/imagens/11zon_cropped (9).png" type="image/x-icon">
 
-					<p class="descricao">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem, corporis excepturi blanditiis reprehenderit amet nostrum.</p>
+</head>
+
+<body>
+	<header class="cabecalho">
+		<div class="logo">
+			<img class="cristal" src="./src/imagens/crystal-gem-blue-magic-gemstones-isolated-icons-vector-35840816-removebg-preview.png" alt="Logo Rockstar Games" />
+			<hr />
+			<img src="./src/imagens/logo-gta.svg" alt="Logo GTA V" />
+		</div>
+		<nav>
+			<ul class="menu">
+				<li>
+					<a href="#home">Home</a>
 				</li>
-
-				<li class="cartao-pokemon">
-					<div class="informacoes">
-						<span>Saranha</span>
-					</div>
-
-					<img src="./src/imagens/saranha.png" alt="Saranha" class="gif" onmouseover="play2()" />
-
-					<ul class="tipos">
-						<li class="tipo grama">Versátil</li>
-					</ul>
-
-					<p class="descricao">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem, corporis excepturi blanditiis reprehenderit amet nostrum.</p>
+				<li>
+					<a href="#comprar">Bestiário</a>
 				</li>
-
-				<li class="cartao-pokemon">
-					<div class="informacoes">
-						<span>Repobu</span>
-					</div>
-
-					<img src="./src/imagens/repobu.png" alt="Repobu" class="gif" onmouseover="play3()" />
-
-					<ul class="tipos">
-						<li class="tipo fofo">Fofo</li>
-					</ul>
-
-					<p class="descricao">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem, corporis excepturi blanditiis reprehenderit amet nostrum.</p>
-				</li>
-
-				<li class="cartao-pokemon">
-					<div class="informacoes">
-						<span>Trigomelo</span>
-					</div>
-
-					<img src="./src/imagens/trigomelo.png" alt="Trigomelo" class="gif" onmouseover="play4()" />
-
-					<ul class="tipos">
-						<li class="tipo grama">Colheita</li>
-					</ul>
-
-					<p class="descricao">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem, corporis excepturi blanditiis reprehenderit amet nostrum.</p>
-				</li>
-
-				<li class="cartao-pokemon">
-					<div class="informacoes">
-						<span>Diabóbrica</span>
-					</div>
-
-					<img src="./src/imagens/abobora.png" alt="Diabóbrica" class="gif" onmouseover="play5()" />
-
-					<ul class="tipos">
-						<li class="tipo grama">Colheita</li>
-					</ul>
-
-					<p class="descricao">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem, corporis excepturi blanditiis reprehenderit amet nostrum.</p>
-				</li>
-
-				<li class="cartao-pokemon">
-					<div class="informacoes">
-						<span>???</span>
-					</div>
-
-					<img style="size: 50px;" src="./src/imagens/5a461410d099a2ad03f9c998.png" alt="inte" class="gif" onmouseover="play9()" />
-
-					<ul class="tipos">
-						<li class="tipo madeira">Madeira</li>
-						<li class="tipo grama">Colheita</li>
-					</ul>
-
-					<p class="descricao">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem, corporis excepturi blanditiis reprehenderit amet nostrum.</p>
-				</li>
-
-				<li class="cartao-pokemon">
-					<div class="informacoes">
-						<span>Tigre Serpente</span>
-					</div>
-
-					<img src="./src/imagens/tigre.png" alt="Tigre-Serpente" class="gif" onmouseover="play6()" />
-
-					<ul class="tipos">
-						<li class="tipo carnal">Carnal</li>
-						<li class="tipo veneno">Veneno</li>
-					</ul>
-
-					<p class="descricao">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem, corporis excepturi blanditiis reprehenderit amet nostrum.</p>
-				</li>
-
-				<li class="cartao-pokemon">
-					<div class="informacoes">
-						<span>Chimp. de Fogo</span>
-					</div>
-
-					<img src="./src/imagens/macaco.png" alt="Chimpanzé de Fogo" class="gif" onmouseover="play7()" />
-
-					<ul class="tipos">
-						<li class="tipo fogo">Fogo</li>
-					</ul>
-
-					<p class="descricao">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem, corporis excepturi blanditiis reprehenderit amet nostrum.</p>
-				</li>
-
-				<li class="cartao-pokemon">
-					<div class="informacoes">
-						<span>Javali Cogumelo</span>
-					</div>
-
-					<img src="./src/imagens/javali.png" alt="Javali" class="gif" onmouseover="play8()" />
-
-					<ul class="tipos">
-						<li class="tipo grama">Colheita</li>
-						<li class="tipo carnal">Carnal</li>
-					</ul>
-
-					<p class="descricao">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem, corporis excepturi blanditiis reprehenderit amet nostrum.</p>
-				</li>
-
-				<li class="cartao-pokemon">
-					<div class="informacoes">
-						<span>Gelapo</span>
-					</div>
-
-					<img src="./src/imagens/gelapo.png" alt="Gelapo" class="gif" onmouseover="play10()" />
-
-					<ul class="tipos">
-						<li class="tipo agua">Água</li>
-					</ul>
-
-					<p class="descricao">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem, corporis excepturi blanditiis reprehenderit amet nostrum.</p>
-				</li>
-
-				<li class="cartao-pokemon">
-					<div class="informacoes">
-						<span>Tocoto</span>
-					</div>
-
-					<img src="./src/imagens/tocoto.png" alt="Tocoto" class="gif" onmouseover="play9()" />
-
-					<ul class="tipos">
-						<li class="tipo madeira">Madeira</li>
-					</ul>
-
-					<p class="descricao">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem, corporis excepturi blanditiis reprehenderit amet nostrum.</p>
-				</li>
-
-				<li class="cartao-pokemon">
-					<div class="informacoes">
-						<span>Cocoto</span>
-					</div>
-
-					<img src="./src/imagens/6-removebg-preview.png" alt="Cocoto" class="gif" onmouseover="play9()" />
-
-					<ul class="tipos">
-						<li class="tipo madeira">Madeira</li>
-						<li class="tipo carnal">Carnal</li>
-					</ul>
-
-					<p class="descricao">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem, corporis excepturi blanditiis reprehenderit amet nostrum.</p>
-				</li>
-
-				<li class="cartao-pokemon">
-					<div class="informacoes">
-						<span>???</span>
-					</div>
-
-					<img style="size: 50px;" src="./src/imagens/5a461410d099a2ad03f9c998.png" alt="inte" class="gif" onmouseover="play9()" />
-
-					<ul class="tipos">
-						<li class="tipo madeira">Madeira</li>
-						<li class="tipo carnal">Carnal</li>
-					</ul>
-
-					<p class="descricao">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem, corporis excepturi blanditiis reprehenderit amet nostrum.</p>
-				</li>
-
-				<li class="cartao-pokemon">
-					<div class="informacoes">
-						<span>Taturanha</span>
-					</div>
-
-					<img src="./src/imagens/10-removebg-preview.png" alt="Tatu" class="gif" onmouseover="play9()" />
-
-					<ul class="tipos">
-						<li class="tipo inseto">Inseto</li>
-						<li class="tipo sombras">Sombra</li>
-					</ul>
-
-					<p class="descricao">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem, corporis excepturi blanditiis reprehenderit amet nostrum.</p>
+				<li>
+					<a href="https://docs.google.com/document/d/1jrrVw7Jk5f8s-0cDF8dAILGR5nDhMPZ-2g1uprfps9U/edit?usp=sharing" target="_blank" style="text-decoration: underline;">Sistema</a>
 				</li>
 			</ul>
-		</main>
-	</body>
-	<script src="index.js"></script>
+		</nav>
+	</header>
+	<header>
+
+		<a href="https://discord.gg/bGEFGUdcuE" target="_blank">
+			<img src="./src/imagens/discord-logo-discord-icon-transparent-free-png.webp" alt="Arcana RPG"
+				class="logo" />
+		</a>
+		<div class="titul">
+			<h1>Bestiário</h1>
+		</div>
+		<button id="botao-alterar-tema">
+			<img src="./src/imagens/sun.png" alt="imagem do sol" class="imagem-botao" id="imagem-botao" />
+			<img src="./src/imagens/moon.png" alt="imagem da lua" class="imagem-botao-2" id="imagem-botao-2" />
+		</button>
+	</header>
+	<main>
+		<ul class="bestiario">
+			<li class="cartao-pokemon">
+				<div class="informacoes">
+					<span>Explosuva</span>
+				</div>
+
+				<img src="./src/imagens/1-removebg-preview.png" alt="Explosuva" class="gif" onmouseover="play1()" />
+
+				<ul class="tipos">
+					<li class="tipo carnal">Carnal</li>
+				</ul>
+
+				<p class="descricao">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem, corporis
+					excepturi blanditiis reprehenderit amet nostrum.</p>
+			</li>
+
+			<li class="cartao-pokemon">
+				<div class="informacoes">
+					<span>Saranha</span>
+				</div>
+
+				<img src="./src/imagens/saranha.png" alt="Saranha" class="gif" onmouseover="play2()" />
+
+				<ul class="tipos">
+					<li class="tipo grama">Versátil</li>
+				</ul>
+
+				<p class="descricao">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem, corporis
+					excepturi blanditiis reprehenderit amet nostrum.</p>
+			</li>
+
+			<li class="cartao-pokemon">
+				<div class="informacoes">
+					<span>Repobu</span>
+				</div>
+
+				<img src="./src/imagens/repobu.png" alt="Repobu" class="gif" onmouseover="play3()" />
+
+				<ul class="tipos">
+					<li class="tipo fofo">Fofo</li>
+				</ul>
+
+				<p class="descricao">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem, corporis
+					excepturi blanditiis reprehenderit amet nostrum.</p>
+			</li>
+
+			<li class="cartao-pokemon">
+				<div class="informacoes">
+					<span>Trigomelo</span>
+				</div>
+
+				<img src="./src/imagens/trigomelo.png" alt="Trigomelo" class="gif" onmouseover="play4()" />
+
+				<ul class="tipos">
+					<li class="tipo grama">Colheita</li>
+				</ul>
+
+				<p class="descricao">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem, corporis
+					excepturi blanditiis reprehenderit amet nostrum.</p>
+			</li>
+
+			<li class="cartao-pokemon">
+				<div class="informacoes">
+					<span>Diabóbrica</span>
+				</div>
+
+				<img src="./src/imagens/abobora.png" alt="Diabóbrica" class="gif" onmouseover="play5()" />
+
+				<ul class="tipos">
+					<li class="tipo grama">Colheita</li>
+				</ul>
+
+				<p class="descricao">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem, corporis
+					excepturi blanditiis reprehenderit amet nostrum.</p>
+			</li>
+
+			<li class="cartao-pokemon">
+				<div class="informacoes">
+					<span>???</span>
+				</div>
+
+				<img style="size: 50px;" src="./src/imagens/5a461410d099a2ad03f9c998.png" alt="inte" class="gif"
+					onmouseover="play9()" />
+
+				<ul class="tipos">
+					<li class="tipo madeira">Madeira</li>
+					<li class="tipo grama">Colheita</li>
+				</ul>
+
+				<p class="descricao">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem, corporis
+					excepturi blanditiis reprehenderit amet nostrum.</p>
+			</li>
+
+			<li class="cartao-pokemon">
+				<div class="informacoes">
+					<span>Tigre Serpente</span>
+				</div>
+
+				<img src="./src/imagens/tigre.png" alt="Tigre-Serpente" class="gif" onmouseover="play6()" />
+
+				<ul class="tipos">
+					<li class="tipo carnal">Carnal</li>
+					<li class="tipo veneno">Veneno</li>
+				</ul>
+
+				<p class="descricao">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem, corporis
+					excepturi blanditiis reprehenderit amet nostrum.</p>
+			</li>
+
+			<li class="cartao-pokemon">
+				<div class="informacoes">
+					<span>Chimp. de Fogo</span>
+				</div>
+
+				<img src="./src/imagens/macaco.png" alt="Chimpanzé de Fogo" class="gif" onmouseover="play7()" />
+
+				<ul class="tipos">
+					<li class="tipo fogo">Fogo</li>
+				</ul>
+
+				<p class="descricao">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem, corporis
+					excepturi blanditiis reprehenderit amet nostrum.</p>
+			</li>
+
+			<li class="cartao-pokemon">
+				<div class="informacoes">
+					<span>Javali Cogumelo</span>
+				</div>
+
+				<img src="./src/imagens/javali.png" alt="Javali" class="gif" onmouseover="play8()" />
+
+				<ul class="tipos">
+					<li class="tipo grama">Colheita</li>
+					<li class="tipo carnal">Carnal</li>
+				</ul>
+
+				<p class="descricao">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem, corporis
+					excepturi blanditiis reprehenderit amet nostrum.</p>
+			</li>
+
+			<li class="cartao-pokemon">
+				<div class="informacoes">
+					<span>Gelapo</span>
+				</div>
+
+				<img src="./src/imagens/gelapo.png" alt="Gelapo" class="gif" onmouseover="play10()" />
+
+				<ul class="tipos">
+					<li class="tipo agua">Água</li>
+				</ul>
+
+				<p class="descricao">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem, corporis
+					excepturi blanditiis reprehenderit amet nostrum.</p>
+			</li>
+
+			<li class="cartao-pokemon">
+				<div class="informacoes">
+					<span>Tocoto</span>
+				</div>
+
+				<img src="./src/imagens/tocoto.png" alt="Tocoto" class="gif" onmouseover="play9()" />
+
+				<ul class="tipos">
+					<li class="tipo madeira">Madeira</li>
+				</ul>
+
+				<p class="descricao">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem, corporis
+					excepturi blanditiis reprehenderit amet nostrum.</p>
+			</li>
+
+			<li class="cartao-pokemon">
+				<div class="informacoes">
+					<span>Cocoto</span>
+				</div>
+
+				<img src="./src/imagens/6-removebg-preview.png" alt="Cocoto" class="gif" onmouseover="play9()" />
+
+				<ul class="tipos">
+					<li class="tipo madeira">Madeira</li>
+					<li class="tipo carnal">Carnal</li>
+				</ul>
+
+				<p class="descricao">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem, corporis
+					excepturi blanditiis reprehenderit amet nostrum.</p>
+			</li>
+
+			<li class="cartao-pokemon">
+				<div class="informacoes">
+					<span>???</span>
+				</div>
+
+				<img style="size: 50px;" src="./src/imagens/5a461410d099a2ad03f9c998.png" alt="inte" class="gif"
+					onmouseover="play9()" />
+
+				<ul class="tipos">
+					<li class="tipo madeira">Madeira</li>
+					<li class="tipo carnal">Carnal</li>
+				</ul>
+
+				<p class="descricao">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem, corporis
+					excepturi blanditiis reprehenderit amet nostrum.</p>
+			</li>
+
+			<li class="cartao-pokemon">
+				<div class="informacoes">
+					<span>Taturanha</span>
+				</div>
+
+				<img src="./src/imagens/10-removebg-preview.png" alt="Tatu" class="gif" onmouseover="play9()" />
+
+				<ul class="tipos">
+					<li class="tipo inseto">Inseto</li>
+					<li class="tipo sombras">Sombra</li>
+				</ul>
+
+				<p class="descricao">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem, corporis
+					excepturi blanditiis reprehenderit amet nostrum.</p>
+			</li>
+		</ul>
+	</main>
+</body>
+<script src="index.js"></script>
+
 </html>

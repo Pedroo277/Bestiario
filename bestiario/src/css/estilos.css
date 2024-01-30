@@ -1,3 +1,41 @@
+.cabecalho {
+	height: 80px;
+	background-color: #0b0b0b;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 80px;
+	border-bottom: 1px solid #282828;
+}
+
+.cabecalho .logo{
+	display: flex;
+	gap: 15px;
+}
+
+.cabecalho .logo .cristal {
+    width: 80px;
+    margin-left: -60px;
+}
+
+.cabecalho .menu {
+	display: flex;
+	gap: 30px;
+}
+
+.cabecalho .menu li a {
+	padding: 25px;
+	color: #e8e8e8;
+	font-weight: bolder;
+	font-size: 18px;
+	font-family: "Arial";
+    text-decoration: none;
+}
+
+.cabecalho .menu li a:hover {
+	border-bottom: 2px solid #fff;
+}
+
 body{
     font-family: 'Poppins', sans-serif;
     max-width: 1280px;
@@ -9,6 +47,11 @@ body{
 body.modo-claro{
     background-color: #5e5b5bad;
     color: #333333;
+}
+
+.titul{
+    padding: 5px;
+    text-decoration:underline;
 }
 
 .imagem-botao-2{
