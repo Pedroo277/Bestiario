@@ -2,20 +2,18 @@ body{
     font-family: 'Poppins', sans-serif;
     max-width: 1280px;
     margin: 0 auto;
-    background-color: #5e5b5bad;
-    color: #333333;
-}
-
-body.modo-escuro{
     background-color:  #212121;
     color: #f5f5f5;
+}
+
+body.modo-claro{
+    background-color: #5e5b5bad;
+    color: #333333;
 }
 
 .imagem-botao-2{
     display: none;
 }
-
-
 
 header{
     display: flex;
@@ -55,7 +53,7 @@ main{
 }
 
 .cartao-pokemon{
-    background-color: #d8e3ec;
+    background-color:  #a8a8a8;
     width: 200PX;
     padding: 15px;
     display: flex;
@@ -70,8 +68,8 @@ main .cartao-pokemon:hover{
     background-color: #c5c5c5;
 }
 
-.modo-escuro .cartao-pokemon{
-    background-color:  #a8a8a8;
+.modo-claro .cartao-pokemon{
+    background-color: #d8e3ec;
 }
 
 main .cartao-pokemon .informacoes{
@@ -150,10 +148,14 @@ main .descricao{
 
 }
 
-body.modo-escuro #imagem-botao{
-    display: none;
+body.modo-claro #imagem-botao{
+    display: block;
 }
 
 body #imagem-botao-2{
+    display: block;
+}
+
+body #imagem-botao{
     display: none;
 }
