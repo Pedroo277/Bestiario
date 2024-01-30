@@ -116,6 +116,7 @@ main .cartao-pokemon .tipo{
 
 .agua{
     background-color: #6390f0;
+    color: white;
 }
 
 .inseto{
@@ -125,6 +126,19 @@ main .cartao-pokemon .tipo{
 .sombras{
     background-color: #3c2444;
     color: white;
+}
+
+.carnal{
+    background-color: rgb(116, 50, 50);
+    color: white;
+}
+
+.fofo{
+    background-color: pink;
+}
+
+.madeira{
+    background-color: rgb(148, 132, 123);
 }
 
 main .descricao{
